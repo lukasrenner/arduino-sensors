@@ -129,7 +129,7 @@ uint16_t measureTime(lineLevel_t level)
         // todo: remove
   utoa(timeStart, debugStr, 10);
   lcd_gotoxy(0,4);
-lcd_puts(debugStr);
+  lcd_puts(debugStr);
 
   // Set capure unit of timer1 to detect a falling edgeWait for the opposite edge
   TCCR1B ^= (1<<ICES1);
